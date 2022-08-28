@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>student</title>
+    </head>
+    <boby>
+        <form method="POST" class="post-form" action="/student">
+            {% csrf_token %}
+            <div>
+                <br>
+                <div>
+                    <h3>Student Details</h3>
+                </div>
+            <div>
+                <label>Student Id</label>
+                <div>
+                    {{form.sid}}
+                </div>
+            </div>
+            <div>
+                <label>Student name</label>
+                <div>
+                    {{form.name}}
+                </div>
+            </div>
+            <div>
+                <label>Student email</label>
+                <div>
+                    {{form.email}}
+                </div>
+            </div>
+            <div>
+                <label>Student phoneno</label>
+                <div>
+                    {{form.phoneno}}
+                </div>
+            </div>
+            <div>
+                <label></label>
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </boby>
+</html>
